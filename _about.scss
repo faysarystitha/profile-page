@@ -1,0 +1,87 @@
+#fillOfAbout {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+.title {
+    text-align: left;
+    color: #E07A5F;
+    margin: 0px;
+    font-family: $fontstyletext;
+    font-weight: bold;
+}
+
+.data {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 500px;
+    font-family: $fontstyletext;
+}
+
+.data2 {
+    @extend .data;
+    margin-bottom: 10px;
+}
+
+.bgprogress {
+    width: 500px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #F4F1DE;
+    position: relative;
+    overflow: hidden;   
+}
+
+#progress {
+    height: 10px;
+    background-color: #E07A5F;
+    position: absolute;
+}
+
+@for $i from 1 through 5 {
+    #progress#{$i} {
+        @extend #progress;
+        @if $i == 1 or $i == 5 {
+            width: 350px;
+        } @else if $i == 2 or $i == 3 {
+            width: 400px;
+        } @else {
+            width: 300px;
+        }
+    }
+}
+
+#dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #F4F1DE;
+    border: 2px solid #E07A5F;
+    position: absolute;
+}
+
+@for $i from 1 through 5 {
+    #dot#{$i} {
+        @extend #dot;
+        @if $i == 1 or $i == 5 {
+            left: 340px;
+        } @else if $i == 2 or $i == 3 {
+            left: 390px;
+        } @else {
+            left: 290px;
+        }
+    }
+}
+
+.container {
+    width: 550px;
+    height: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,27 @@
+#fillOfAchievements {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.year {
+    font-size: 45px;
+    color: #E07A5F;
+}
+
+.achievement {
+    width: 150px;
+    text-align: center;
+}
+
+.fill {
+    font-family: $fontstyletext;
+}
+
+.lineSpace {
+    width: 5px;
+    height: 300px;
+    background-color: #E07A5F;
+}

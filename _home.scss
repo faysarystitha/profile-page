@@ -1,0 +1,77 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 170px;
+    height: 64px;
+}
+
+#fillNav {
+    padding: 0;
+    a {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+#nama {
+    position: relative;
+    width: 100px;
+}
+
+#download {
+    background-color: #E07A5F;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+#teksHome {
+    width: 500px;
+}
+
+#foto {
+    width: 350px;
+}
+
+.backend {
+    font-size: 50px;
+    margin: 0px;
+}
+
+.enthusiast {
+    @extend .backend;
+    margin-left: 145px;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#myname {
+    @extend #teksHome;
+    color: #E07A5F;
+}
+
+.socmed {
+    width: 25px;
+    margin-right: 10px;
+}
+
+#mail {
+    @extend .socmed;
+    height: 25px;
+    width: 30px;
+}
+
+#findme {
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#detailProfile {
+    @extend #teksHome;
+    font-family: $fontstyletext;
+}
